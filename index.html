@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="/index_style.css"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <button class="menu-btn" onclick="toggleNavbar()">☰</button>
+    <nav class="navbar">
+    <a href="#About_Me" onclick="hideNavbar()"  rel="noopener noreferrer">About Me</a>
+    <a href="#projects" onclick="hideNavbar()"  rel="noopener noreferrer">My Projects</a>
+<a href="#download-resume"onclick="hideNavbar()"  target="_blank" rel="noopener noreferrer">Download Resume</a>   
+<a href="#contact"onclick="hideNavbar()" rel="noopener noreferrer">Contact me</a> 
+</nav>
+<script>
+  function toggleNavbar() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active'); // Toggle the 'active' class to show or hide the navbar
+  }
+  function hideNavbar() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.remove('active'); // Remove the 'active' class to hide the navbar
+        }
+</script>
+    <section class="about_me"id="About_Me">
+        <div class="profile-photo-container">
+            <img src="/images/saurav_photo.jpg" alt="Profile Photo" class="profile-photo">
+          </div>
+          <h1>I am</h1>
+<h1>Sauarv Kumar</h1>
+<h2>Web Developer</h2>
+</section>
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="/images/projects_images/project1.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">TEXTALCHEMY</h3>
+          <p class="project-description">TextAlchemy is a web-based text manipulation tool designed to provide a wide range of text editing and transformation capabilities. The website offers various features that allow users to perform complex text operations efficiently and conveniently.</p>
+          <a href="https://sauravk0045.github.io/textAlchemy/"target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+  
+      
+      <div class="project-card">
+        <img src="/images/projects_images/project2.png" alt="Project 2" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">FreshFocus News App</h3>
+          <p class="project-description">FreshFocus is a React-based news application designed to provide users with the latest news updates from various sources. It leverages modern web development practices and integrates with news APIs to fetch real-time news articles, presenting them in an organized and user-friendly manner.</p>
+          <a href="https://github.com/Sauravk0045/FreshNews-React_App-" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+  
+      
+      <div class="project-card">
+        <img src="/images/projects_images/project3.png" alt="Project 3" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">Hospital Website</h3>
+          <p class="project-description">The Hospital Management System developed by Saurav Kumar with Sunidhi Priya is a comprehensive web application designed to streamline the operations of a hospital. The website provides an intuitive and user-friendly interface, ensuring that hospital staff and patients can easily navigate and utilize the system's functionalities.</p>
+          <a href="https://sauravk0045.github.io/Hospital_Website/" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section></section>
+<section id="download-resume" class="resume-section">
+    <h2>Download My Resume</h2>
+    <p>Get a detailed view of my experience and skills by downloading my resume below.</p>
+    <a href="/saurav_resume.pdf" download="Saurav_Kumar_Resume.pdf" class="download-button">Download Resume</a>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+      <a href="https://github.com/Sauravk0045" target="_blank" class="contact-link" title="GitHub">
+        <i class="fab fa-github" style="font-size:36px"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/saurav-kumar-aa682b1ba/" target="_blank" class="contact-link" title="LinkendIn">
+        <i class='fab fa-linkedin' style='font-size:36px;color:blue'></i>
+      </a>
+      <a href="https://www.instagram.com/darkhunt_005/" target="_blank" class="contact-link" title="Instagram">
+        <i class='fab fa-instagram' style='font-size:36px;color:red'></i>
+      </a>
+      <a href="mailto:sk7021497@gmail.com" class="contact-link" title="Email">
+        <i class='fas fa-mail-bulk' style='font-size:36px'></i>
+      </a>
+      <a href="https://wa.me/7992401782" target="_blank" class="contact-link" title="WhatsApp">
+        <i class='fab fa-whatsapp' style='font-size:36px;color:green'></i>
+      </a>
+    </div>
+  </section>
+  
+</body>
+</html>
